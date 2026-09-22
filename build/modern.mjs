@@ -27,11 +27,7 @@ function productCard(product) {
       <dl class="stats">${stats}</dl>
       ${list(product.highlights, "bullets")}
       <p class="pcard-meta"><span class="meta-key">Best for</span> ${esc(product.bestFor)}</p>
-      <p class="pcard-meta"><span class="meta-key">Bag</span> ${esc(product.weight)} <span class="sep"></span> ${
-        product.price
-          ? `<span class="meta-key">Guide price</span> &pound;${esc(product.price)}`
-          : `<span class="meta-key">Price</span> on enquiry`
-      }</p>
+      <p class="pcard-meta"><span class="meta-key">Bag</span> ${esc(product.weight)} <span class="sep"></span> <span class="meta-key">Guide price</span> &pound;${esc(product.price)}</p>
       <details>
         <summary><span>Full spec &amp; feeding guide</span></summary>
         <div class="detail-inner">
@@ -58,7 +54,7 @@ function compareTable(products) {
       <td class="num">${get("Fibres")}</td>
       <td class="num">${get("Ash")}</td>
       <td class="num">${esc(p.weight)}</td>
-      <td class="num">${p.price ? `&pound;${esc(p.price)}` : "On enquiry"}</td>
+      <td class="num">&pound;${esc(p.price)}</td>
     </tr>`;
     })
     .join("");

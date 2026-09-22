@@ -1,4 +1,4 @@
-import { esc, para, paras, list, head, productDetail, pairTable, priceLabel, structuredData } from "./lib.mjs";
+import { esc, para, paras, list, head, productDetail, pairTable, structuredData } from "./lib.mjs";
 
 const IMG = "../assets/img/";
 
@@ -20,7 +20,7 @@ function productRow(product, index) {
     <p class="row-summary">${para(product.summary)}</p>
     ${list(product.highlights, "ticks")}
     <div class="chips">${chips}</div>
-    <p class="row-meta"><span>Best for: ${esc(product.bestFor)}</span><span>${esc(product.weight)} bag &middot; ${priceLabel(product.price)}</span></p>
+    <p class="row-meta"><span>Best for: ${esc(product.bestFor)}</span><span>${esc(product.weight)} bag &middot; guide price &pound;${esc(product.price)}</span></p>
     <details>
       <summary>Full composition &amp; feeding guide</summary>
       <div class="detail-inner">
@@ -46,7 +46,7 @@ function compareTable(products) {
       <td>${get("Fibres")}</td>
       <td>${get("Ash")}</td>
       <td>${esc(p.weight)}</td>
-      <td>${p.price ? `&pound;${esc(p.price)}` : "On enquiry"}</td>
+      <td>&pound;${esc(p.price)}</td>
     </tr>`;
     })
     .join("");
