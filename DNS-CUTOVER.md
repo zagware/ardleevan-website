@@ -70,6 +70,12 @@ Add these **A** records, all with the name `@` (some panels show this as blank, 
 Yes — all four, same name, four different addresses. That is correct and intentional. If the control
 panel will not let you add more than one, email Big Wet Fish support and ask them to add all four.
 
+**One question worth asking Big Wet Fish support first:** *"Does your DNS support an `ALIAS` or
+`ANAME` record on the apex domain?"* If it does, use a single `ALIAS`/`ANAME` record with the name
+`@` pointing to `zagware.github.io` **instead of** the four `A` records above — it does the same job
+but keeps tracking GitHub automatically if they ever change their addresses. Most control panels do
+not offer it, in which case the four `A` records are the correct approach.
+
 Optionally also add these four **AAAA** records (same name `@`) so the site works on IPv6 networks:
 
 | Type | Name / Host | Value / Points to | TTL |
