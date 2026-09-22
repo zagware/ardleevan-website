@@ -1,0 +1,94 @@
+{
+  "brand": "Ardleevan",
+  "domain": "ardleevandogfood.co.uk",
+  "url": "https://ardleevandogfood.co.uk",
+  "title": "Ardleevan | Chapel Farm Premium Dog Food for Working Dogs",
+  "description": "Ardleevan is the Northern Ireland and Ireland distributor of Chapel Farm Premium Dog Food — hypoallergenic, naturally preserved diets for working, competition and companion dogs.",
+  "strapline": "The home of champions",
+  "substrapline": "Passion & commitment to quality",
+  "hero": {
+    "eyebrow": "Sole NI stockist of the complete Chapel Farm range",
+    "heading": "Premium nutrition for working dogs",
+    "lede": "Chapel Farm Premium Dog Food, developed by multiple award-winning gundog trainer David Lisett and fed at the Buccleuch Gundog Kennels. Quality ingredients, no fillers, no bulking agents.",
+    "image": "labradors.jpg",
+    "imageAlt": "Working labradors in the field"
+  },
+  "about": {
+    "heading": "About Ardleevan",
+    "image": "mark.jpg",
+    "imageAlt": "Ardleevan kennels",
+    "body": [
+      "I have been a keeper of working Labradors for half my life, and a breeder of Fox Red Labradors.",
+      "I had always struggled to find premium-quality dog food at an affordable price, with quality ingredients and none of the fillers and bulking agents found in a lot of the commercially available dog foods. After years of research, trial and error, I discovered a food developed by the world-famous, highly regarded and multiple award-winning David Lisett. Chapel Farm Premium dog foods are second to none in my opinion.",
+      "I have been lucky enough to be appointed distributor for Ireland of this amazing quality dog food. I have had amazing results with my own dogs, and countless other customers have had very good results with Chapel Farm Puppy Junior for pups under eight months of age.",
+      "My adult dogs are on Chapel Farm Performance 24+, the highest quality hypoallergenic dog food I have ever used. The coats and condition of my dogs are always commented on."
+    ]
+  },
+  "quote": {
+    "text": "To have a happy dog it needs to be a healthy dog. What I feed our dogs is of paramount importance for both their well-being and their performance. The dogs have never looked so well since being fed the diets in the Chapel Farm Premium Dog Food Range, and that is why I feed Chapel Farm dog food.",
+    "attribution": "David Lisett",
+    "role": "Head trainer, Buccleuch Gundogs"
+  },
+  "quality": {
+    "heading": "What goes into Chapel Farm Premium Dog Food?",
+    "body": [
+      "All of the Chapel Farm Premium Dog Food ranges are free from BHA — we only use natural antioxidants to stabilise our feeds. The products are clear of any colour additives and all are naturally preserved.",
+      "Our chicken is great quality and fit for human consumption; the chicken used in the range does not include any feet, feathers or beaks from the animal carcass.",
+      "All pet foods contain EC-permitted additives such as vitamins and trace minerals which are essential to dogs and are therefore included in the range. The calcium content for each variety is between 1.2% and 2.0%."
+    ],
+    "points": [
+      { "title": "Free from BHA", "text": "Natural antioxidants only — never artificial preservatives." },
+      { "title": "No colour additives", "text": "Nothing added for appearance. Naturally preserved throughout." },
+      { "title": "Human-grade chicken", "text": "No feet, feathers or beaks. Just quality meat protein." },
+      { "title": "Proven in the kennels", "text": "Fed at the Buccleuch Gundog Kennels and championship kennels." }
+    ]
+  },
+  "chapelFarm": {
+    "heading": "Chapel Farm & the Buccleuch Kennels",
+    "body": "Chapel Farm is the home of the Buccleuch Kennels, situated on the Queensberry Estate in the Lowther Hills in Dumfries & Galloway. The kennels form part of a very versatile estate where you can enjoy a castle tour, mountain biking, fishing or shooting and much more."
+  },
+  "buying": {
+    "heading": "Where to buy",
+    "lede": "This site is for information only — there is no online ordering. Get in touch and we will sort you out.",
+    "cards": [
+      {
+        "title": "Northern Ireland & Ireland",
+        "text": "Ardleevan is the sole NI stockist of the complete Chapel Farm range. Message us on WhatsApp, call, or email for current prices, availability and delivery."
+      },
+      {
+        "title": "Breeders",
+        "text": "A breeder offer is available on Chapel Farm Puppy Junior. Ask us for details."
+      },
+      {
+        "title": "Great Britain",
+        "text": "Customers in mainland GB should order directly from Chapel Farm Dog Foods.",
+        "link": { "label": "chapelfarmdogfood.co.uk", "href": "https://chapelfarmdogfood.co.uk" }
+      }
+    ]
+  },
+  "priceNote": "Guide prices for 15 kg bags. Prices are indicative only and may change — please confirm when you get in touch.",
+  "contact": {
+    "heading": "Get in touch",
+    "lede": "Customer service is very important to us. If you have any queries at all, please let us know.",
+    "email": "info@ardleevandogfood.co.uk",
+    "phoneDisplay": "07801 944500",
+    "phoneHref": "tel:+447801944500",
+    "whatsappHref": "https://wa.me/447801944500",
+    "facebook": "https://www.facebook.com/ardleevanlabradors",
+    "facebookLabel": "Ardleevan Labradors & Dog Food",
+    "area": "Belfast, Northern Ireland"
+  },
+  "gallery": [
+    { "image": "dog_feed.jpg", "alt": "Working dog being fed", "caption": "An all-round totally balanced diet" },
+    { "image": "Slide_pups.jpg", "alt": "Labrador puppies", "caption": "High energy and good body weight throughout infancy" },
+    { "image": "Siloulette.jpg", "alt": "Dog silhouetted at sunset", "caption": "Bright, alert and full of energy" }
+  ],
+  "nav": [
+    { "label": "The range", "href": "#range" },
+    { "label": "Compare", "href": "#compare" },
+    { "label": "Quality", "href": "#quality" },
+    { "label": "About", "href": "#about" },
+    { "label": "Where to buy", "href": "#buy" },
+    { "label": "Contact", "href": "#contact" }
+  ]
+}

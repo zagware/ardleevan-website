@@ -1,0 +1,340 @@
+[
+  {
+    "id": "puppy-junior",
+    "name": "Chapel Farm Puppy Junior",
+    "shortName": "Puppy Junior",
+    "stage": "Puppies & juniors",
+    "tagline": "This is where the journey begins",
+    "price": "48.00",
+    "weight": "15 kg",
+    "image": "puppy-junior-feed.jpg",
+    "imageAlt": "Chapel Farm Puppy Junior 15kg bag",
+    "bestFor": "Birth to 6–8 months, and bitches in whelp",
+    "constituents": {
+      "Crude Protein": "29.0%",
+      "Fat content": "18.0%",
+      "Crude Fibres": "2.5%",
+      "Crude Ash": "6.0%"
+    },
+    "highlights": [
+      "Rich in freshly prepared chicken with a quality protein profile",
+      "Carefully balanced formula for growth and development",
+      "Key quality ingredients ensuring maximum digestibility",
+      "Wheat gluten-free, with no added artificial colourings or flavourings"
+    ],
+    "summary": "One of the most important stages of a dog's life — too important to leave to chance. A complete feed meeting all the nutritional requirements of the developing puppy until it is ready to move to the adult range.",
+    "description": [
+      "Puppies have very specific nutritional needs, going from birth to adult in little more than a year in some breeds. Chapel Farm Puppy Junior is a complete feed meeting all nutritional requirements of the developing puppy until ready to move to the adult range. There is no need to supplement this diet unless directed to do so by a vet.",
+      "Chapel Farm Puppy Junior is rich in chicken and grains that provide a quality protein profile and the foundation of your puppy's diet. In addition, the grains used also provide carbohydrates and numerous vitamins and minerals.",
+      "Salmon oil is rich in the Omega-3 essential fatty acids DHA and EPA plus vitamins A, B3 and D. Essential fatty acids are obtained exclusively through dietary intake, so the health of dogs depends on getting enough of them in the food we give them. The benefits are many and well documented: support for neural development and learning in puppies, optimal brain function, vision and hearing, healthy skin, glossy coat, cardiovascular health and the immune system. Salmon oil is also important for nutritional support of the joints, as are the included glucosamine and green-lipped mussel.",
+      "Mannan oligosaccharides (MOS) and fructo oligosaccharides (FOS) have beneficial prebiotic effects, as does the included beet pulp, encouraging the growth of friendly bacteria in the large intestine which promotes overall gastro-intestinal health. In combination with the plasma powder and nucleotides they enhance the effectiveness of the body's immune system — especially important in young dogs that have not yet developed the same levels of immunity to infection as adults.",
+      "We recommend feeding Chapel Farm Puppy Junior to bitches in whelp as well as puppies. For puppies we suggest continued use until 6 to 8 months of age, at which point we suggest changing to Performance 24+, which contains everything required for continued development until adulthood is reached. At that point a decision on the variety to feed can be made based on expected activity levels.",
+      "Breeder offer available — please ask for details."
+    ],
+    "composition": "Chicken (chicken meal min 20%, freshly prepared chicken min 20%), rice, maize, prairie meal, chicken fat, oats, yeast (source of mannan oligosaccharides 1250mg/kg), salmon oil (source of omega 3 fatty acids DHA & EPA), unmolassed beet pulp, seaweed, plasma powder, whole egg powder, sodium bicarbonate, potassium chloride, glucosamine (1000mg/kg), fructose oligosaccharides, nucleotides, green lipped mussel powder, yucca schidigera, blackcurrant, kale, beetroot, rosemary.",
+    "additives": "Natural antioxidants",
+    "nutritionalAdditives": [
+      ["Vitamin A (E672)", "21,500iu/kg (as retinol acetate)"],
+      ["Vitamin D (E671)", "2,000iu/kg (as cholecalciferol)"],
+      ["Vitamin E (3a700)", "280mg/kg (as alpha tocopherol acetate)"],
+      ["Iron sulphate monohydrate", "85mg/kg"],
+      ["Calcium iodate", "1.5mg/kg"],
+      ["Cupric sulphate pentahydrate", "35mg/kg"],
+      ["Manganous oxide", "80mg/kg"],
+      ["Zinc sulphate monohydrate", "375mg/kg"],
+      ["Zinc chelate of amino acids hydrate", "365mg/kg"],
+      ["Sodium selenite", "0.5mg/kg"]
+    ],
+    "feeding": {
+      "intro": [
+        "Most puppies will have tasted solid food at around 3 to 4 weeks, having taken an interest in the contents of mum's bowl. This is a good age to start with a small amount mashed with water to a thin, porridge-like consistency. Increase gradually, using the amounts below as a guide. Do not switch exclusively to solids too soon, as the digestive system needs time to adapt.",
+        "The food can be fed dry or moistened with water or gravy to the consistency your puppy prefers. At Chapel Farm we slowly reduce the amount of water mixed with the food until feeding it dry from age 6½ to 7 weeks, ensuring clean fresh drinking water is available at all times.",
+        "Feed in an area that is easily cleaned and ensure the bowl is thoroughly washed between feeds, as puppies do not have the same defences to infection as adult dogs.",
+        "Puppies grow very quickly and have large appetites but small stomachs, so feed little and often in the early stages. From starting to offer food to two months of age we suggest 4–6 meals a day; from two to three months, 4 meals a day; from 4 months onwards, 2 meals a day."
+      ],
+      "table": {
+        "caption": "Suggested daily feeding guide in grams",
+        "headers": ["Size of dog", "1 month", "2 months", "4 months", "6 months", "8 months", "12 months"],
+        "rows": [
+          ["Small (5–10 kg)", "75", "135", "145", "150", "—", "—"],
+          ["Medium (10–25 kg)", "100", "170", "280", "265", "265", "—"],
+          ["Large (25–45 kg)", "130", "220", "315", "400", "400", "—"],
+          ["Very large (>45 kg)", "150", "325", "460", "520", "600", "530"]
+        ]
+      },
+      "notes": [
+        "Leave the bowl down for 5 minutes and then remove it, whether eaten or not. Only put the bowl back down at the next scheduled feeding, again for 5 minutes.",
+        "The figures above are only a guide. Every puppy, even of the same age and breed, can differ in energy requirements — a highly active pup will require more, a docile pup less. Use the guide as a starting point, monitor the condition of the puppy and adjust accordingly.",
+        "Loose stools or increased frequency often indicate more food than required. Food left in the bowl may indicate too large a portion. Food finished very quickly, or a puppy trying to eat other items, can suggest a larger portion is required.",
+        "Avoid feeding immediately before or after activity — allow a gap of an hour to reduce the risk of bloating.",
+        "Always ensure that clean fresh drinking water is available at all times."
+      ]
+    }
+  },
+  {
+    "id": "original-20",
+    "name": "Chapel Farm Original 20",
+    "shortName": "Original 20",
+    "stage": "Rest & companion",
+    "tagline": "An all-round, totally balanced diet",
+    "price": "27.00",
+    "weight": "15 kg",
+    "image": "original-dog-food.jpg",
+    "imageAlt": "Chapel Farm Original 20 15kg bag",
+    "bestFor": "Rest periods, companion dogs and senior dogs",
+    "constituents": {
+      "Protein": "20.0%",
+      "Fat content": "11.0%",
+      "Crude Fibres": "2.5%",
+      "Crude Ash": "4.5%"
+    },
+    "highlights": [
+      "Rich in chicken with whole grains",
+      "With Scottish salmon oil",
+      "With essential fatty acids",
+      "With added beet pulp"
+    ],
+    "summary": "A totally balanced diet suitable for feeding all breeds of working or companion dog. This is the food we recommend during rest periods, when dogs are not working or training as hard.",
+    "description": [
+      "If you would like a food that meets all your requirements, why not try Chapel Farm Original 20? It will fully meet your dog's daily nutritional needs whilst maintaining your dog's level of health and vitality.",
+      "The Original 20 is an all-round totally balanced diet suitable for feeding all breeds of working or companion dog. This is the food we recommend using during rest periods when the dogs are not working or training as hard, and it has been fed at the Buccleuch Gundog Kennels for years. We recommend this variety for feeding all athletic types of dogs, including gundogs, working and pastoral breeds.",
+      "The Original 20% is rich in chicken and whole grains that provide the foundation of your dog's diet. The chicken content is an excellent source of protein and contains higher levels of protein as the water weight of the chicken has been removed. Not only do the grains used provide carbohydrates and numerous vitamins and minerals, they are also an excellent source of protein.",
+      "The Scottish salmon oil is rich in Omega 3, an essential fatty acid useful for the development of brains and bones in younger dogs. It can be helpful as an anti-inflammatory supplement for arthritic dogs and may also assist in keeping the brain functioning sharp in ageing dogs. It is recommended for dogs with skin allergies to help various skin conditions heal faster.",
+      "Essential fatty acids are fundamentally important for dogs as they play a major role in the maintenance of healthy coat, skin and nails and many important biological functions in the body. They are obtained exclusively through dietary intake, therefore the health of dogs depends on obtaining enough essential fatty acids in the food we give them.",
+      "The added beet pulp is a very gentle, beneficial insoluble source of fibre that is generally very well tolerated and provides nutrition for the beneficial bacteria that reside in the intestinal tract. Beet pulp adds bulk and moisture to stools and provides an energy source that can improve the health of the colon. Slow to moderately fermentable fibre sources like beet pulp are often recommended as one of the best sources of fibre for dogs.",
+      "We recommend Original 20 as a totally balanced diet that will fulfil all dietary requirements of a resting or companion dog and keep them in peak condition, even in their senior years."
+    ],
+    "composition": "Cereals (4% rice), Meat & animal derivatives (22% chicken), Oils & fats (1% Scottish salmon oil & 0.5% omega 3 fatty acids), Vegetables (2.5% beet pulp), Minerals and Yeast.",
+    "additives": "Natural antioxidants",
+    "nutritionalAdditives": [
+      ["Vitamin A (E672)", "16,000iu/kg (as retinol acetate)"],
+      ["Vitamin D (E671)", "1,400iu/kg (as cholecalciferol)"],
+      ["Vitamin E (3a700)", "200mg/kg (as alpha tocopherol acetate)"],
+      ["Iron sulphate monohydrate", "66mg/kg"],
+      ["Cupric sulphate pentahydrate", "28mg/kg"],
+      ["Manganous oxide", "64mg/kg"],
+      ["Zinc sulphate monohydrate", "300mg/kg"],
+      ["Zinc chelate of amino acids hydrate", "275mg/kg"],
+      ["Sodium selenite", "0.4mg/kg"]
+    ],
+    "feeding": {
+      "intro": [
+        "Introduce the diet gradually over a period of 5–7 days until it replaces the previous food completely. It is suggested that the total daily intake be divided into two meals."
+      ],
+      "table": {
+        "caption": "Suggested daily feeding guide in grams",
+        "headers": ["Size of dog", "Daily requirement (g)"],
+        "rows": [
+          ["Small (5–10 kg)", "120–200"],
+          ["Medium (10–25 kg)", "200–400"],
+          ["Large (25–45 kg)", "400–625"],
+          ["Very large (>45 kg)", "625+"]
+        ]
+      },
+      "notes": [
+        "The product can be fed dry or moistened with water or gravy to the consistency that your dog prefers. Typically a thorough mix of 2 parts warm water with 3 parts dry weight of food is preferred.",
+        "The above amounts are only a guide. Feed sufficient amounts to maintain condition, dependent upon the level of activity enjoyed and the conformation of your dog.",
+        "Always ensure that clean fresh drinking water is available at all times.",
+        "There is no requirement to supplement this diet."
+      ]
+    }
+  },
+  {
+    "id": "performance-24",
+    "name": "Chapel Farm Performance 24",
+    "shortName": "Performance 24",
+    "stage": "Working season",
+    "tagline": "Put a spring back in their step",
+    "price": "30.00",
+    "weight": "15 kg",
+    "image": "performance-24.jpg",
+    "imageAlt": "Chapel Farm Performance 24 15kg bag",
+    "bestFor": "Working dogs building to and through the shooting season",
+    "constituents": {
+      "Protein": "24.0%",
+      "Fat content": "14.0%",
+      "Crude Fibres": "3.5%",
+      "Crude Ash": "6.5%"
+    },
+    "highlights": [
+      "Rich in beef & oats",
+      "With Scottish salmon oil",
+      "With added glucosamine & green lipped mussel",
+      "With added milk thistle, marigold & seaweed"
+    ],
+    "summary": "Full of wholesome nutritious ingredients, 100% complete and totally balanced. The same higher protein content as Performance 24+, priced to suit all budgets for a premium working dog food.",
+    "description": [
+      "When you need to put a spring back in their step, why not try Chapel Farm Performance 24? The nutritious formulation will leave your dog feeling hale and hearty and full of life.",
+      "This variety aims to provide your dog with an extra boost of energy and stamina in the lead-up to the shooting season. It is important to maintain weight and condition on your dog, especially in the cold winter months when they will be burning body fat to keep warm, outwith any physical activity.",
+      "The main ingredients of beef and oats provide a tasty meat alternative to the chicken varieties in the range. Beef is an excellent source of protein and contains higher levels of protein due to the water weight being removed. As a slow-release energy source, the oats help maintain stamina during a hard day's training, work or competition. Oats are naturally high in protein and soluble fibres which help to lower cholesterol, act as a digestive aid to calm the intestinal tract, and contain iron, manganese, zinc, B vitamins and the anti-tumour compound b-sitosterol.",
+      "The added salmon oil supports your dog's healthy coat, skin, brain and bone development and function. The glucosamine and green-lipped mussel aid joint health, and the added milk thistle aids liver health. For general overall wellbeing we have added marigold to aid digestive function.",
+      "We also add seaweed (kelp), rich in 37 minerals including high levels of iodine, calcium, iron, potassium and vitamins, especially those from the B family. Seaweed helps maintain the nervous and immune systems, and its anti-inflammatory properties benefit both skin and skeleton. Kelp is especially good for dogs that suffer from skin problems, itchy skin, excessive moulting, cracked claws and dandruff.",
+      "We recommend Performance 24 as a middle-of-the-range totally balanced diet that will fulfil all dietary requirements of a working dog, giving that extra energy boost for physical endurance, especially in colder weather."
+    ],
+    "composition": "Cereals (14% oats), Meat & animal derivatives (14% beef), Oils and fats (0.5% Scottish salmon oil), Vegetable protein extracts, Derivatives of vegetable origin, Herbs (0.2% total herbs) & Molluscs & crustaceans (1000mg/kg glucosamine, 200mg/kg green lipped mussel).",
+    "additives": "Natural antioxidants",
+    "nutritionalAdditives": [
+      ["Vitamin A (E672)", "16,000iu/kg (as retinol acetate)"],
+      ["Vitamin D (E671)", "1,370iu/kg (as cholecalciferol)"],
+      ["Vitamin E (3a700)", "185mg/kg (as alpha tocopherol acetate)"],
+      ["Iron sulphate monohydrate", "75mg/kg"],
+      ["Cupric sulphate pentahydrate", "32mg/kg"],
+      ["Manganous oxide", "55mg/kg"],
+      ["Zinc sulphate monohydrate", "390mg/kg"],
+      ["Sodium selenite", "0.5mg/kg"]
+    ],
+    "feeding": {
+      "intro": [
+        "Introduce the diet gradually over a period of 5–7 days until it replaces the previous food completely. It is suggested that the total daily intake be divided into two meals."
+      ],
+      "table": {
+        "caption": "Suggested daily feeding guide in grams",
+        "headers": ["Size of dog", "Daily requirement (g)"],
+        "rows": [
+          ["Small (5–10 kg)", "120–200"],
+          ["Medium (10–25 kg)", "200–400"],
+          ["Large (25–45 kg)", "400–625"],
+          ["Very large (>45 kg)", "625+"]
+        ]
+      },
+      "notes": [
+        "The product can be fed dry or moistened with water or gravy to the consistency that your dog prefers. Typically a thorough mix of 2 parts warm water with 3 parts dry weight of food is preferred.",
+        "The above amounts are only a guide. Feed sufficient amounts to maintain condition, dependent upon the level of activity enjoyed and the conformation of your dog.",
+        "Always ensure that clean fresh drinking water is available at all times.",
+        "There is no requirement to supplement this diet."
+      ]
+    }
+  },
+  {
+    "id": "performance-24-plus",
+    "name": "Chapel Farm Performance 24+",
+    "shortName": "Performance 24+",
+    "stage": "Competition",
+    "tagline": "The superior variety of the range",
+    "price": "32.00",
+    "weight": "15 kg",
+    "image": "performance-24-plus.jpg",
+    "imageAlt": "Chapel Farm Performance 24+ 15kg bag",
+    "bestFor": "Competition dogs, whelping bitches and young dogs from six months",
+    "constituents": {
+      "Protein": "24.0%",
+      "Fat content": "14.0%",
+      "Crude Fibres": "3.5%",
+      "Crude Ash": "6.0%"
+    },
+    "highlights": [
+      "Hypoallergenic premium chicken dinner",
+      "Wheat gluten-free recipe",
+      "With added glucosamine & herbs",
+      "With added carnitine & Scottish salmon oil"
+    ],
+    "summary": "The superior variety of the Chapel Farm range, for achieving the highest level of results from working or competition dogs. Hypoallergenic, chicken and rice based, free from ingredients known to cause food intolerances.",
+    "description": [
+      "When you would like to push the boat out and give your dog a lift with extra nutritional support, why not try Chapel Farm Performance 24+? It will provide optimum nutrition and you'll see your dog flourish in peak condition whilst bursting with energy.",
+      "During training, working and competing, dogs use incredible amounts of energy; Performance 24+ was designed with this in mind. This variety can also be fed to whelping bitches and young dogs from six months onwards. At the Chapel Farm kennels all the young dogs and those David intends to compete with are fed on Performance 24+, as they need a nutritious diet that enables them to be in peak condition both physically and mentally.",
+      "Performance 24+ consists of the finest ingredients. It is a premium quality diet based on chicken and rice, hypoallergenic, being free from ingredients known to cause food intolerances. Scottish salmon oil improves and looks after your dog's coat, skin, brain and bone development. The extra glucosamine supports the structure and function of joints and is targeted to help those suffering from arthritis or joint disease.",
+      "A touch of herbs provides extra help for various conditions such as arthritis, pain and heart problems. Performance 24+ also has added carnitine to improve heart function, control weight and extend quality of life — carnitine helps metabolise energy and break down fatty acids to maintain heart health.",
+      "The higher protein level than Original 20 increases your dog's stamina and concentration to maximise results when they work or train. Many dogs lose energy in colder weather keeping their bodies warm, outwith any physical activity, and the added protein gives them a boost to subsidise this.",
+      "This variety is the highest quality in the Chapel Farm adult range. It is also suitable for companion dogs who lead an active lifestyle, or for those you simply want to have the taste of the finer things in life."
+    ],
+    "composition": "Chicken meal (26% chicken), Rice, Maize, Chicken fat, Full fat linseed, Alfalfa, Peas, Yeast, Salmon oil (1%), Salt, Glucosamine (1000mg/kg), Milk thistle, Nettle, Seaweed, Mannan oligosaccharides, Carnitine (125mg/kg), Green lipped mussel, Blackcurrant extract, Carrot, Beetroot and Rosemary (0.3% total herbs).",
+    "additives": "Natural antioxidants",
+    "nutritionalAdditives": [
+      ["Vitamin A (E672)", "17,500iu/kg (as retinol acetate)"],
+      ["Vitamin D (E671)", "1,600iu/kg (as cholecalciferol)"],
+      ["Vitamin E (3a700)", "260mg/kg (as alpha tocopherol acetate)"],
+      ["Iron sulphate monohydrate", "81mg/kg"],
+      ["Cupric sulphate pentahydrate", "33mg/kg"],
+      ["Manganous oxide", "77mg/kg"],
+      ["Zinc sulphate monohydrate", "400mg/kg"],
+      ["Zinc chelate of amino acids hydrate", "360mg/kg"],
+      ["Sodium selenite", "0.5mg/kg"]
+    ],
+    "feeding": {
+      "intro": [
+        "Introduce the diet gradually over a period of 5–7 days until it replaces the previous food completely. It is suggested that the total daily intake be divided into two meals."
+      ],
+      "table": {
+        "caption": "Suggested daily feeding guide in grams",
+        "headers": ["Size of dog", "Daily requirement (g)"],
+        "rows": [
+          ["Small (5–10 kg)", "100–180"],
+          ["Medium (10–25 kg)", "180–370"],
+          ["Large (25–45 kg)", "370–570"],
+          ["Very large (>45 kg)", "570+"]
+        ]
+      },
+      "notes": [
+        "The product can be fed dry or moistened with water or gravy to the consistency that your dog prefers. Typically a thorough mix of 2 parts warm water with 3 parts dry weight of food is preferred.",
+        "The above amounts are only a guide. Feed sufficient amounts to maintain condition, dependent upon the level of activity enjoyed and the conformation of your dog.",
+        "Always ensure that clean fresh drinking water is available at all times.",
+        "There is no requirement to supplement this diet."
+      ]
+    }
+  },
+  {
+    "id": "invest-n-digest-lamb",
+    "name": "Chapel Farm Invest 'N' Digest Lamb",
+    "shortName": "Invest 'N' Digest Lamb",
+    "stage": "Sensitive digestion",
+    "tagline": "Just what the vet ordered for a sensitive tummy",
+    "price": "31.00",
+    "weight": "15 kg",
+    "image": "Lamb-Diet.jpg",
+    "imageAlt": "Chapel Farm Invest 'N' Digest Lamb 15kg bag",
+    "bestFor": "Poor digestion, condition and coat; bitches recovering after whelping",
+    "constituents": {
+      "Protein": "22.0%",
+      "Fat content": "15.0%",
+      "Crude Fibres": "2.0%",
+      "Crude Ash": "8.0%"
+    },
+    "highlights": [
+      "Quality tasty lamb (lamb meal min 28%)",
+      "Designed to improve poor digestion and condition",
+      "Keeps dogs feeling fuller in the kennels",
+      "Excellent results returning bitches to peak condition after whelping"
+    ],
+    "summary": "Specifically designed to help improve poor digestion, condition and energy levels and aid physical and mental health. Feed all year round, with good stools, better body condition and better coat condition.",
+    "description": [
+      "Invest 'N' Digest Lamb has been specifically designed to help improve poor digestion, condition and energy levels and to aid physical and mental health. It has also demonstrated excellent results in returning bitches to peak condition following whelping.",
+      "The ingredients let your dog feel fuller to help take the hunger away when they are in the kennels. We have had the guidance of a top nutritionist to assist with creating this recipe and diet. It has also been vigorously tried and tested at Chapel Farm Kennels and other championship dog-producing kennels.",
+      "We have been delighted with the results and feedback in our feed trials, which demonstrate that you can feed your dogs all year round on this diet. We have had positive results with dogs of differing ages. The results show good stools, better body condition and better coat condition. We feed less, with the result being a happier dog.",
+      "This diet is made from quality tasty lamb. It is just what the vet orders if your dog has a bad tummy or gets hungry in the kennels. Help your dog get the most out of its day."
+    ],
+    "composition": "Wheat, Lamb meal (min 28%), Maize, Chicken fat, Lamb digest, Beet pulp, Minerals, Mannan oligosaccharides, Yucca Schidigera, Blackcurrant, Rosehip.",
+    "additives": "Natural antioxidants",
+    "nutritionalAdditives": [
+      ["Vitamin A (3a672a)", "23,000iu/kg"],
+      ["Vitamin D3 (3a671)", "1,500iu/kg"],
+      ["Vitamin E (3a700)", "250mg/kg"],
+      ["Iron (as iron (II) sulphate monohydrate)", "23mg/kg"],
+      ["Iodine (calcium iodate, anhydrous)", "1.5mg/kg"],
+      ["Copper (as copper (II) sulphate pentahydrate)", "8.7mg/kg"],
+      ["Manganese (as manganese (II) oxide)", "42mg/kg"],
+      ["Zinc (as zinc sulphate monohydrate)", "130mg/kg"],
+      ["Zinc (as zinc chelate of amino acids hydrate)", "14mg/kg"],
+      ["Selenium (as sodium selenite)", "0.1mg/kg"]
+    ],
+    "feeding": {
+      "intro": [
+        "Introduce the diet gradually over a period of 5–7 days until it replaces the previous food completely. It is suggested that the total daily intake be divided into two meals."
+      ],
+      "table": {
+        "caption": "Suggested daily feeding guide in grams",
+        "headers": ["Size of dog", "Daily requirement (g)"],
+        "rows": [
+          ["Small (5–10 kg)", "105–175"],
+          ["Medium (10–25 kg)", "175–350"],
+          ["Large (25–45 kg)", "350–545"]
+        ]
+      },
+      "notes": [
+        "This product can be fed dry or moistened with water or gravy to the consistency that your dog prefers. Typically a thorough mix of 2 parts warm water with 3 parts dry weight of food is preferred.",
+        "The above amounts are only a guide. Feed sufficient amounts to maintain condition, dependent upon the level of activity enjoyed and the conformation of your dog.",
+        "Always ensure that clean fresh drinking water is available at all times. There is no requirement to supplement this diet.",
+        "Store in a cool, dry place. For best before date and batch number, see side of bag."
+      ]
+    }
+  }
+]
