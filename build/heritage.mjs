@@ -1,6 +1,6 @@
 import { esc, para, paras, list, head, productDetail, pairTable, structuredData } from "./lib.mjs";
 
-const IMG = "../assets/img/";
+const IMG = "assets/img/";
 
 const fonts = `<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">`;
 
