@@ -27,7 +27,11 @@ function productCard(product) {
       <dl class="stats">${stats}</dl>
       ${list(product.highlights, "bullets")}
       <p class="pcard-meta"><span class="meta-key">Best for</span> ${esc(product.bestFor)}</p>
-      <p class="pcard-meta"><span class="meta-key">Bag</span> ${esc(product.weight)} <span class="sep"></span> <span class="meta-key">Guide price</span> &pound;${esc(product.price)}</p>
+      <p class="pcard-meta"><span class="meta-key">Bag</span> ${esc(product.weight)} <span class="sep"></span> ${
+        product.price
+          ? `<span class="meta-key">Guide price</span> &pound;${esc(product.price)}`
+          : `<span class="meta-key">Price</span> on enquiry`
+      }</p>
       <details>
         <summary><span>Full spec &amp; feeding guide</span></summary>
         <div class="detail-inner">
@@ -41,7 +45,7 @@ function productCard(product) {
 }
 
 function compareTable(products) {
-  const thead = `<thead><tr><th scope="col">Variety</th><th scope="col">Best for</th><th scope="col">Protein</th><th scope="col">Fat</th><th scope="col">Fibre</th><th scope="col">Ash</th><th scope="col">Guide price</th></tr></thead>`;
+  const thead = `<thead><tr><th scope="col">Variety</th><th scope="col">Best for</th><th scope="col">Protein</th><th scope="col">Fat</th><th scope="col">Fibre</th><th scope="col">Ash</th><th scope="col">Bag</th><th scope="col">Guide price</th></tr></thead>`;
   const rows = products
     .map((p) => {
       const c = p.constituents;
@@ -53,7 +57,8 @@ function compareTable(products) {
       <td class="num">${get("Fat")}</td>
       <td class="num">${get("Fibres")}</td>
       <td class="num">${get("Ash")}</td>
-      <td class="num">&pound;${esc(p.price)}</td>
+      <td class="num">${esc(p.weight)}</td>
+      <td class="num">${p.price ? `&pound;${esc(p.price)}` : "On enquiry"}</td>
     </tr>`;
     })
     .join("");
@@ -98,7 +103,7 @@ export function render({ site, products }) {
       <dl class="hero-stats">
         <div><dt>Varieties</dt><dd>${products.length}</dd></div>
         <div><dt>Protein range</dt><dd>20&ndash;29%</dd></div>
-        <div><dt>Bag size</dt><dd>15 kg</dd></div>
+        <div><dt>Bag sizes</dt><dd>${[...new Set(products.map((p) => p.weight))].sort().join(" / ")}</dd></div>
         <div><dt>Preservatives</dt><dd>Natural</dd></div>
       </dl>
     </div>
@@ -122,7 +127,7 @@ export function render({ site, products }) {
     <header class="sec-head">
       <p class="kicker">01 &mdash; The range</p>
       <h2>Every Chapel Farm diet, in full</h2>
-      <p class="section-lede">All five varieties are 100% complete and totally balanced. Open any card for composition, analytical constituents, nutritional additives and the feeding guide.</p>
+      <p class="section-lede">All ${products.length} varieties are 100% complete and totally balanced, including two grain-free Invest &lsquo;N&rsquo; Digest recipes. Open any card for composition, analytical constituents, nutritional additives and the feeding guide.</p>
     </header>
     <div class="pgrid">
       ${products.map(productCard).join("\n")}

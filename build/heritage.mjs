@@ -1,4 +1,4 @@
-import { esc, para, paras, list, head, productDetail, pairTable, structuredData } from "./lib.mjs";
+import { esc, para, paras, list, head, productDetail, pairTable, priceLabel, structuredData } from "./lib.mjs";
 
 const IMG = "../assets/img/";
 
@@ -20,7 +20,7 @@ function productRow(product, index) {
     <p class="row-summary">${para(product.summary)}</p>
     ${list(product.highlights, "ticks")}
     <div class="chips">${chips}</div>
-    <p class="row-meta"><span>Best for: ${esc(product.bestFor)}</span><span>${esc(product.weight)} bag &middot; guide price &pound;${esc(product.price)}</span></p>
+    <p class="row-meta"><span>Best for: ${esc(product.bestFor)}</span><span>${esc(product.weight)} bag &middot; ${priceLabel(product.price)}</span></p>
     <details>
       <summary>Full composition &amp; feeding guide</summary>
       <div class="detail-inner">
@@ -33,7 +33,7 @@ function productRow(product, index) {
 }
 
 function compareTable(products) {
-  const thead = `<thead><tr><th scope="col">Variety</th><th scope="col">Best for</th><th scope="col">Protein</th><th scope="col">Fat</th><th scope="col">Fibre</th><th scope="col">Ash</th><th scope="col">Guide price</th></tr></thead>`;
+  const thead = `<thead><tr><th scope="col">Variety</th><th scope="col">Best for</th><th scope="col">Protein</th><th scope="col">Fat</th><th scope="col">Fibre</th><th scope="col">Ash</th><th scope="col">Bag</th><th scope="col">Guide price</th></tr></thead>`;
   const rows = products
     .map((p) => {
       const c = p.constituents;
@@ -45,7 +45,8 @@ function compareTable(products) {
       <td>${get("Fat")}</td>
       <td>${get("Fibres")}</td>
       <td>${get("Ash")}</td>
-      <td>&pound;${esc(p.price)}</td>
+      <td>${esc(p.weight)}</td>
+      <td>${p.price ? `&pound;${esc(p.price)}` : "On enquiry"}</td>
     </tr>`;
     })
     .join("");
@@ -110,8 +111,8 @@ export function render({ site, products }) {
 <section class="band" id="range">
   <div class="wrap">
     <p class="kicker">The complete Chapel Farm range</p>
-    <h2>Five diets, one for every stage</h2>
-    <p class="section-lede">Every variety is 100% complete and totally balanced. Expand any variety for its full composition, analytical constituents and feeding guide.</p>
+    <h2>A diet for every stage</h2>
+    <p class="section-lede">${products.length} varieties, every one 100% complete and totally balanced &mdash; including two grain-free Invest &lsquo;N&rsquo; Digest recipes for sensitive dogs. Expand any variety for its full composition, analytical constituents and feeding guide.</p>
   </div>
   <div class="wrap rows">
     ${products.map(productRow).join("\n")}
@@ -149,9 +150,10 @@ export function render({ site, products }) {
       <p>${para(site.chapelFarm.body)}</p>
       ${pairTable(
         [
-          ["Calcium content", "1.2% – 2.0%"],
+          ["Calcium (core adult range)", "1.2% – 2.0%"],
           ["Preservatives", "Natural antioxidants only"],
-          ["Bag size", "15 kg"],
+          ["Grain-free options", "Salmon & Duck"],
+          ["Bag sizes", [...new Set(products.map((p) => p.weight))].join(" & ")],
         ],
         "spec-table",
       )}

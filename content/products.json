@@ -336,5 +336,150 @@
         "Store in a cool, dry place. For best before date and batch number, see side of bag."
       ]
     }
+  },
+  {
+    "id": "invest-n-digest-salmon",
+    "name": "Chapel Farm Invest 'N' Digest Salmon",
+    "shortName": "Invest 'N' Digest Salmon",
+    "stage": "Grain free",
+    "tagline": "Allows your dog to feel better every day",
+    "price": null,
+    "weight": "12 kg",
+    "image": "Salmon-Diet.jpg",
+    "imageAlt": "Chapel Farm Invest 'N' Digest Salmon grain-free 12kg bag",
+    "bestFor": "Dietary sensitivities, poor digestion, skin and coat condition",
+    "constituents": {
+      "Protein": "27.0%",
+      "Fat content": "12.0%",
+      "Crude Fibres": "2.0%",
+      "Crude Ash": "7.3%"
+    },
+    "extraConstituents": {
+      "Omega 3 fatty acids": "1.5%",
+      "Omega 6 fatty acids": "1.5%",
+      "Moisture": "9.0%",
+      "Calcium": "0.9%",
+      "Phosphorus": "0.6%"
+    },
+    "highlights": [
+      "Grain-free, hypoallergenic recipe",
+      "With tasty salmon, potato, sweet potato, peas & salmon oil",
+      "Health-giving properties enhancing skin and coat condition",
+      "Aids digestion and supports physical and mental wellbeing"
+    ],
+    "summary": "A grain-free recipe specifically designed and formulated for easy digestion and dogs with dietary sensitivities. A hypoallergenic complete diet that suits all breeds.",
+    "description": [
+      "Invest 'N' Digest Salmon is a hypoallergenic grain-free recipe full of delicious salmon and sweet potato.",
+      "This unique recipe has essential ingredients including Omega 3 and Omega 6 fatty acids, specifically formulated to enhance skin and coat condition as well as helping with poor digestion and your dog's mental wellbeing. This balanced diet is all your dog needs for its daily requirements to have a happy and healthy life.",
+      "Give the best to your dog to get the best from them — less is more when feeding Invest 'N' Digest Salmon."
+    ],
+    "composition": "Salmon (30%, of which dried salmon 17%, hydrolysed salmon 7%, salmon gravy 6%), sweet potatoes (17%), potato flakes (17%), peas (17%), salmon oil (7%), potato protein, dried beet pulp, dried chicory (0.5%, a natural source of FOS and inulin), minerals, yeast hydrolysate (a natural source of MOS and beta glucans), Yucca schidigera.",
+    "additives": "Natural antioxidants",
+    "nutritionalAdditives": [
+      ["Vitamin A (3a672a)", "15,000iu/kg"],
+      ["Vitamin D3 (3a671)", "1,200iu/kg"],
+      ["Vitamin E (3a700)", "135mg/kg"],
+      ["Taurine", "1000mg/kg"],
+      ["L-carnitine", "100mg/kg"],
+      ["Iron (iron sulphate, monohydrate)", "20mg/kg"],
+      ["Copper (copper sulphate, pentahydrate)", "7mg/kg"],
+      ["Zinc (zinc sulphate, monohydrate)", "125mg/kg"],
+      ["Manganese (manganese oxide)", "30mg/kg"],
+      ["Iodine (calcium iodate anhydrous)", "1.5mg/kg"],
+      ["Selenium (sodium selenite)", "0.1mg/kg"]
+    ],
+    "feeding": {
+      "intro": [
+        "Introduce the diet gradually over a period of 5–7 days until it replaces the previous food completely. It is suggested that the total daily intake be divided into two meals."
+      ],
+      "table": {
+        "caption": "Suggested daily feeding guide in grams",
+        "headers": ["Size of dog", "Daily requirement (g)"],
+        "rows": [
+          ["Small (5–10 kg)", "135–230"],
+          ["Medium (10–25 kg)", "230–455"],
+          ["Large (25–45 kg)", "455–705"],
+          ["Very large (>45 kg)", "705+"]
+        ]
+      },
+      "notes": [
+        "This product can be fed dry or moistened with water or gravy to the consistency that your dog prefers. Typically a thorough mix of 2 parts warm water with 3 parts dry weight of food is preferred.",
+        "The above amounts are only a guide. Feed sufficient amounts to maintain condition, dependent upon the level of activity enjoyed and the conformation of your dog.",
+        "Always ensure that clean fresh drinking water is available at all times. There is no requirement to supplement this diet.",
+        "Store in a cool, dry place. For best before date and batch number, see side of bag."
+      ]
+    }
+  },
+  {
+    "id": "invest-n-digest-duck",
+    "name": "Chapel Farm Invest 'N' Digest Duck",
+    "shortName": "Invest 'N' Digest Duck",
+    "stage": "Grain free",
+    "tagline": "Allows your dog to feel better every day",
+    "price": null,
+    "weight": "12 kg",
+    "image": "Duck-Diet.jpg",
+    "imageAlt": "Chapel Farm Invest 'N' Digest Duck grain-free 12kg bag",
+    "bestFor": "Dietary sensitivities, skin and coat condition, fussy feeders",
+    "constituents": {
+      "Protein": "27.0%",
+      "Fat content": "14.0%",
+      "Crude Fibres": "3.0%",
+      "Crude Ash": "7.0%"
+    },
+    "extraConstituents": {
+      "Omega 3 fatty acids": "1.1%",
+      "Omega 6 fatty acids": "2.7%",
+      "Moisture": "9.0%",
+      "Calcium": "1.4%",
+      "Phosphorus": "0.9%"
+    },
+    "highlights": [
+      "Grain-free, hypoallergenic recipe",
+      "With tasty duck, potato, sweet potato, peas & salmon oil",
+      "Health-giving properties enhancing skin and coat condition",
+      "Aids digestion and supports physical and mental wellbeing"
+    ],
+    "summary": "A hypoallergenic grain-free recipe full of delicious duck and sweet potato, with Omega 3 and Omega 6 fatty acids formulated to enhance skin and coat condition and help with poor digestion.",
+    "description": [
+      "Invest 'N' Digest Duck is a hypoallergenic grain-free recipe full of delicious duck and sweet potato.",
+      "This unique recipe has essential ingredients, including Omega 3 and Omega 6 fatty acids, specifically formulated to enhance skin and coat condition, as well as help with poor digestion and your dog's mental wellbeing. This balanced diet is all your dog needs for its daily requirements to have a happy and healthy life.",
+      "Give the best to your dog to get the best from them — less is more when feeding Invest 'N' Digest Duck."
+    ],
+    "composition": "Duck (34%, of which dried duck 26% and fresh duck 8%), dried sweet potatoes (16%), dried potato flakes (16%), dried peas (16%), poultry fat, vegetable stock, linseed, dried beet pulp, dried brewer's yeast, minerals, salmon oil (0.5%), yeast hydrolysate (a natural source of MOS and beta glucans) (0.5%), dried chicory (a natural source of FOS and inulin) (0.5%), Yucca schidigera (0.03%).",
+    "additives": "Natural antioxidants",
+    "nutritionalAdditives": [
+      ["Vitamin A (3a672a)", "20,000iu/kg"],
+      ["Vitamin D3 (3a671)", "1,500iu/kg"],
+      ["Vitamin E (3a700)", "150mg/kg"],
+      ["Taurine", "1000mg/kg"],
+      ["L-carnitine", "500mg/kg"],
+      ["Iron (iron sulphate, monohydrate)", "50mg/kg"],
+      ["Copper (copper sulphate, pentahydrate)", "13mg/kg"],
+      ["Zinc (zinc sulphate, monohydrate)", "62.5mg/kg"],
+      ["Manganese (manganese oxide)", "30mg/kg"],
+      ["Iodine (calcium iodate anhydrous)", "1.5mg/kg"]
+    ],
+    "feeding": {
+      "intro": [
+        "Introduce the diet gradually over a period of 5–7 days until it replaces the previous food completely. It is suggested that the total daily intake be divided into two meals."
+      ],
+      "table": {
+        "caption": "Suggested daily feeding guide in grams",
+        "headers": ["Size of dog", "Daily requirement (g)"],
+        "rows": [
+          ["Small (5–10 kg)", "85–170"],
+          ["Medium (10–25 kg)", "170–330"],
+          ["Large (25–45 kg)", "330–560"],
+          ["Very large (>45 kg)", "560+"]
+        ]
+      },
+      "notes": [
+        "This product can be fed dry or moistened with water or gravy to the consistency that your dog prefers. Typically a thorough mix of 2 parts warm water with 3 parts dry weight of food is preferred.",
+        "The above amounts are only a guide. Feed sufficient amounts to maintain condition, dependent upon the level of activity enjoyed and the conformation of your dog.",
+        "Always ensure that clean fresh drinking water is available at all times. There is no requirement to supplement this diet.",
+        "Store in a cool, dry place. For best before date and batch number, see side of bag."
+      ]
+    }
   }
 ]

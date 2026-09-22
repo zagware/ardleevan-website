@@ -229,7 +229,7 @@ cite span { display: block; color: rgba(255, 255, 255, 0.7); font-weight: 400; l
 }
 
 /* ---------- buy ---------- */
-.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-top: 2.5rem; }
 .card { background: #fff; border: 1px solid var(--rule); padding: 1.8rem; }
 .card h3 { font-size: 1.2rem; }
 .card p { color: var(--muted); font-size: 0.95rem; }

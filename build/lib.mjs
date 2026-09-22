@@ -24,6 +24,10 @@ export const paras = (list, cls = "") =>
 export const list = (items, cls = "") =>
   `<ul${cls ? ` class="${cls}"` : ""}>${items.map((i) => `<li>${para(i)}</li>`).join("")}</ul>`;
 
+/** Ardleevan does not publish NI pricing for every variety; those are enquiry-only. */
+export const priceLabel = (price) =>
+  price ? `guide price &pound;${esc(price)}` : "price on enquiry";
+
 /** Two-column definition table from an object or array of [key, value] pairs. */
 export function pairTable(pairs, cls = "") {
   const rows = (Array.isArray(pairs) ? pairs : Object.entries(pairs))
@@ -58,7 +62,7 @@ export function productDetail(product, { cls = "" } = {}) {
   </div>
   <div class="detail-block">
     <h4>Analytical constituents</h4>
-    ${pairTable(product.constituents, "spec-table")}
+    ${pairTable({ ...product.constituents, ...(product.extraConstituents ?? {}) }, "spec-table")}
   </div>
   <div class="detail-block">
     <h4>Additives</h4>

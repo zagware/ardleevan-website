@@ -230,7 +230,7 @@ cite span { display: block; color: rgba(255, 255, 255, 0.6); font-weight: 400; m
 .chapel p { margin: 0; font-size: 0.93rem; color: var(--muted); }
 
 /* ---------- buy ---------- */
-.bgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+.bgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.2rem; }
 .bcard { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.8rem; }
 .bcard h3 { font-size: 1.15rem; }
 .bcard p { color: var(--muted); font-size: 0.95rem; }
