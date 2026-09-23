@@ -28,11 +28,6 @@ async function build() {
   await cp(join(root, "styles/heritage.css"), join(dist, "style.css"));
   await writeFile(join(dist, ".nojekyll"), "");
 
-  const cname = join(root, "CNAME");
-  await readFile(cname, "utf8")
-    .then((v) => writeFile(join(dist, "CNAME"), v))
-    .catch(() => {});
-
   console.log(`built -> dist/  (${content.products.length} products)`);
 }
 

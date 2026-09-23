@@ -41,13 +41,14 @@ Preview: <https://zagware.github.io/ardleevan-website/>
 ## Cutting over to ardleevandogfood.co.uk
 
 The custom domain is deliberately *not* configured yet, so the preview stays reachable while the
-WordPress site remains live on the domain. Adding the `CNAME` file before DNS moves would redirect
-the preview URL to a domain still pointing at WordPress.
+WordPress site remains live on the domain. Setting it early would 301 the preview URL onto a domain
+still pointing at WordPress.
+
+This repo publishes via a GitHub Actions workflow, so the domain binding lives **only** in repository
+settings — a `CNAME` file in the artifact is ignored and is not required.
 
 Owner-facing DNS instructions: [`DNS-CUTOVER.md`](DNS-CUTOVER.md). Once the owner confirms the zone
 is updated:
 
-1. `echo ardleevandogfood.co.uk > CNAME && git commit -am "Add custom domain" && git push`
-   (the build copies a root `CNAME` into `dist/` automatically).
-2. Set the custom domain in Settings → Pages, then enable *Enforce HTTPS* once the certificate
-   issues.
+1. Settings → Pages → **Custom domain** = `ardleevandogfood.co.uk`, Save.
+2. Enable *Enforce HTTPS* once the certificate issues.

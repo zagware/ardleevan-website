@@ -127,12 +127,11 @@ The only address you are removing is `152.89.64.67`.
 
 Not your job, but for the record:
 
-1. Add a `CNAME` file containing `ardleevandogfood.co.uk` to the repository and push.
-2. GitHub → repo **Settings → Pages → Custom domain** = `ardleevandogfood.co.uk`, Save.
-3. Wait for the HTTPS certificate to be issued (usually minutes, up to an hour), then tick
+1. GitHub → repo **Settings → Pages → Custom domain** = `ardleevandogfood.co.uk`, Save.
+2. Wait for the HTTPS certificate to be issued (usually minutes, up to an hour), then tick
    **Enforce HTTPS**.
 
-Between steps 2 and 3 the site is briefly reachable over plain `http://` only. That is normal.
+Between those two steps the site is briefly reachable over plain `http://` only. That is normal.
 
 ---
 
