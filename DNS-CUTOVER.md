@@ -96,7 +96,28 @@ There is currently a **CNAME** for `www` pointing at `ardleevandogfood.co.uk`. C
 If the panel rejects it, delete the existing `www` record first, then add it fresh. Some panels
 require a trailing dot: `zagware.github.io.`
 
-### 2e. Save, then tell the developer
+### 2e. Add the ownership-verification TXT record
+
+This one record locks the domain to our GitHub account, so nobody else can ever publish a website on
+`ardleevandogfood.co.uk` or any of its subdomains. It has nothing to do with email and cannot affect
+it.
+
+The developer will send you a long code (roughly 32 characters, looks like
+`a1b2c3d4e5f6...`). Add:
+
+| Type | Name / Host | Value / Points to | TTL |
+| --- | --- | --- | --- |
+| TXT | `_github-pages-challenge-zagware` | *(the code the developer sends you)* | 300 |
+
+Notes:
+
+- The name starts with an underscore. That is correct — type it exactly as shown.
+- Some panels want the full name, `_github-pages-challenge-zagware.ardleevandogfood.co.uk`.
+- Paste the code on its own, with no quotes and no extra spaces.
+- **Leave this record in place permanently.** If it is deleted later, the domain quietly loses its
+  protection.
+
+### 2f. Save, then tell the developer
 
 Save the zone and send a message saying it's done. Within about 5 minutes the domain will be
 serving the new site.
@@ -127,11 +148,25 @@ The only address you are removing is `152.89.64.67`.
 
 Not your job, but for the record:
 
-1. GitHub → repo **Settings → Pages → Custom domain** = `ardleevandogfood.co.uk`, Save.
-2. Wait for the HTTPS certificate to be issued (usually minutes, up to an hour), then tick
+**Before switch-over day** — get the verification code for the owner:
+
+1. GitHub → **organization** `zagware` → Settings → Pages → **Add a domain** →
+   `ardleevandogfood.co.uk`. (Organization settings, not repository settings — `zagware` is an org.)
+2. Copy the `_github-pages-challenge-zagware` TXT value GitHub displays and send it to the owner for
+   step 2e. There is no API for this value; it only appears in that dialog.
+
+**After the owner confirms the zone is saved:**
+
+3. `dig _github-pages-challenge-zagware.ardleevandogfood.co.uk +short TXT` — once it returns the
+   code, go back to org Settings → Pages and click **Continue verifying → Verify**.
+4. Repo `zagware/ardleevan-website` → **Settings → Pages → Custom domain** =
+   `ardleevandogfood.co.uk`, Save. (This repo publishes from a GitHub Actions workflow, so this
+   field *is* the binding — a `CNAME` file in the artifact is ignored.)
+5. Wait for the HTTPS certificate to be issued (usually minutes, up to an hour), then tick
    **Enforce HTTPS**.
 
-Between those two steps the site is briefly reachable over plain `http://` only. That is normal.
+Between steps 4 and 5 the site is briefly reachable over plain `http://` only. That is normal.
+Verifying before step 4 is the recommended order, but the site works either way.
 
 ---
 
@@ -170,6 +205,8 @@ support to do these if you'd rather not.
   incognito window, or your phone on mobile data.
 - Independent check: <https://dnschecker.org/#A/ardleevandogfood.co.uk> should list the four
   `185.199.x.153` addresses.
+- Verification record: <https://dnschecker.org/#TXT/_github-pages-challenge-zagware.ardleevandogfood.co.uk>
+  should show the code. The developer then clicks *Verify* on GitHub.
 - **Send yourself a test email** to `info@ardleevandogfood.co.uk` from a personal account, and send
   one out from it. Both should work immediately — nothing about mail has changed.
 
