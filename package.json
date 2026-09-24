@@ -1,0 +1,16 @@
+{
+  "name": "ardleevan-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "zsite dev .",
+    "build": "zsite build . --target cloudflare",
+    "build:pages": "zsite build . --target pages",
+    "check": "zsite check .",
+    "deploy": "zsite build . --target cloudflare && wrangler deploy"
+  },
+  "devDependencies": {
+    "@zagware/site-framework": "github:zagware/website-framework#v0.2.0",
+    "wrangler": "^4.36.0"
+  }
+}

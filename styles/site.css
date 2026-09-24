@@ -1,0 +1,12 @@
+/* Ardleevan-specific tweaks on top of the framework's heritage theme. */
+
+/* The logo JPG has a white background; multiply blends it into the cream header. */
+.site-nav__brand img { mix-blend-mode: multiply; }
+
+/* Trust strip: compact band of four short points under the hero. */
+.s-cards.band--dark { padding-block: 2.6rem; }
+.s-cards.band--dark h3 { font-size: 1.05rem; margin-bottom: 0.3rem; }
+.s-cards.band--dark p { font-size: 0.92rem; margin: 0; }
+
+/* Keep bag sizes and prices on one line in the comparison table. */
+.s-table td:nth-last-child(-n + 2) { white-space: nowrap; }

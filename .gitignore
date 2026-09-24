@@ -1,4 +1,11 @@
-dist/
 node_modules/
+dist/
+.zsite-dev/
+.zsite-cache/
+.wrangler/
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
 .DS_Store
 scrape/
