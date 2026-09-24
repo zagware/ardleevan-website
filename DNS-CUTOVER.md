@@ -1,3 +1,8 @@
+> **SUPERSEDED.** This described the GitHub Pages route. The site now deploys to a Cloudflare Worker
+> and the domain's DNS moves to Cloudflare — follow [`CLOUDFLARE-CUTOVER.md`](CLOUDFLARE-CUTOVER.md)
+> instead. Kept only for the SPF/DMARC wording and the mail-record inventory referenced from there.
+> Ignore every GitHub Pages IP address and the `_github-pages-challenge-zagware` record below.
+
 # Pointing ardleevandogfood.co.uk at the new website
 
 Instructions for the domain owner. Everything happens in the **Big Wet Fish** control panel

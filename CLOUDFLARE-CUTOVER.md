@@ -20,9 +20,14 @@ The catch: Cloudflare must host the domain's **DNS** (nameservers). The steps be
    ```
    Also ask the owner for a screenshot of the Big Wet Fish DNS page. DKIM selectors can't be discovered with `dig`.
 2. Cloudflare dashboard (Zagware account) → **Add a domain** → `ardleevandogfood.co.uk` → Free plan. Cloudflare scans the existing records. Compare the result with step 1 and add anything missing.
-3. Set **every mail-related record to "DNS only" (grey cloud)**: MX targets, `mail`, `webmail`, `autodiscover`, and anything pointing at 152.89.64.9. Proxying mail hosts breaks email.
-4. Delete the scanned `@` and `www` records that point at the old WordPress server (152.89.64.67). The Worker's custom domains replace them when it is deployed. Keep an `old` A record → 152.89.64.67 (DNS only) if the owner wants the old site reachable during the switch.
-5. Note the two Cloudflare nameservers it assigns.
+3. Set **every mail-related record to "DNS only" (grey cloud)**: MX targets, `mail`, `webmail`, `autodiscover`, `autoconfig`, `cpanel`, `webdisk`, `whm`, `ftp`, `cpcalendars`, `cpcontacts` — anything pointing at 152.89.64.9. Proxying mail hosts breaks email.
+4. Set the scanned `@` A record (152.89.64.67) and the `www` CNAME to **DNS only** as well. Do *not* proxy them and do *not* delete them yet: while the nameservers propagate, these keep the existing WordPress site serving. Delete them immediately before the Worker deploy — the Worker's custom domains cannot be created while a conflicting record exists. Optionally add `old` A → 152.89.64.67 (DNS only) so the old site stays reachable afterwards.
+5. **Retarget the CalDAV/CardDAV SRV records.** `_caldav._tcp`, `_caldavs._tcp`, `_carddav._tcp` and `_carddavs._tcp` currently point at `ardleevandogfood.co.uk` on ports 2079/2080. The apex becomes a proxied Worker, and Cloudflare only proxies HTTP(S) ports, so calendar/contact sync would stop. Change each SRV target to `cpanel.ardleevandogfood.co.uk` (DNS only → 152.89.64.9). Leave `_autodiscover._tcp` alone; it already points to `cpanelemaildiscovery.cpanel.net`.
+6. **Verify the DKIM record survived the import.** `default._domainkey` is longer than 255 characters, so it is stored as two quoted strings and is the single most common thing an import mangles. Open the record in Cloudflare and compare it character-for-character with the `dig` output saved in step 1 — the live value ends `...JwIDAQAB;`. A truncated DKIM key means every outbound email starts failing authentication.
+7. Add the missing **DMARC** record now rather than later: TXT `_dmarc` → `v=DMARC1; p=none; rua=mailto:info@ardleevandogfood.co.uk` (DNS only). `p=none` is monitor-only and cannot block mail.
+8. **Fix SPF before the switch, not after.** The current value ends `+a +mx ~all`. `+a` authorises whatever the apex A record resolves to — after cutover that is Cloudflare's entire anycast range, i.e. any Cloudflare customer could pass SPF for this domain. Change it to `v=spf1 ip4:152.89.64.9 ip4:87.117.230.215 +mx ~all`.
+9. Scroll to the bottom of the Cloudflare DNS list and confirm no records sit below `default._domainkey` — a second DKIM selector there would be easy to miss.
+10. Note the two Cloudflare nameservers it assigns.
 
 ## Switch-over (owner, about 5 min)
 
@@ -34,15 +39,18 @@ The change usually takes effect within an hour, but can take up to 24 hours for 
 
 1. In `wrangler.jsonc`, uncomment the `routes` block for `ardleevandogfood.co.uk` and `www.ardleevandogfood.co.uk`.
 2. Add repo secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`. The token needs Workers Scripts:Edit, Workers Routes:Edit, and Zone:Read on this zone.
-3. `git tag v1.0.0 && git push --tags` runs the **Deploy (Cloudflare)** workflow: build (`--strict`), deploy, smoke test.
-4. Dashboard → Rules → Redirect Rules → template **"Redirect from WWW to root"**.
-5. Check the following:
+3. Delete the `@` A record (152.89.64.67) and the `www` CNAME kept alive during propagation. The Worker custom domains cannot bind while they exist.
+4. `git tag v1.0.0 && git push --tags` runs the **Deploy (Cloudflare)** workflow: build (`--strict`), deploy, smoke test.
+5. Dashboard → Rules → Redirect Rules → template **"Redirect from WWW to root"**, and SSL/TLS → Edge Certificates → **Always Use HTTPS** on.
+6. Check the following:
    - `https://ardleevandogfood.co.uk/` shows the new site;
    - `/robots.txt` allows indexing and lists the sitemap;
    - `http://` redirects to `https://`;
-   - send test emails in both directions.
-6. Search Console: add the domain property and submit `https://ardleevandogfood.co.uk/sitemap.xml`.
-7. Later, tidy SPF: remove `+a` (see `DNS-CUTOVER.md` step 4) and add DMARC `v=DMARC1; p=none; rua=mailto:info@ardleevandogfood.co.uk`.
+   - `dig TXT default._domainkey.ardleevandogfood.co.uk` still returns the full key;
+   - send test emails in both directions, and check the received headers show `dkim=pass` and `spf=pass`.
+7. Search Console: add the domain property and submit `https://ardleevandogfood.co.uk/sitemap.xml`.
+8. Delete the stale `_acme-challenge` and `_cpanel-dcv-test-record` TXT entries — leftovers from cPanel AutoSSL validation runs.
+9. **Watch cPanel AutoSSL at the next renewal (~90 days).** cPanel no longer controls this zone, so any renewal that relies on DNS validation will fail and the certificate on `webmail`/`mail` will lapse. HTTP validation still works because those hostnames still resolve to 152.89.64.9. If a renewal fails, ask Big Wet Fish to switch that domain's AutoSSL to HTTP DCV.
 
 ## Rollback
 
