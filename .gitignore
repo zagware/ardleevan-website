@@ -10,3 +10,4 @@ dist/
 .DS_Store
 scrape/
 dig_records.txt
+cf_nameservers.txt
