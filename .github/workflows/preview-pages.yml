@@ -1,4 +1,6 @@
-name: Deploy to GitHub Pages
+# POC / preview: every push to main publishes a noindex preview to GitHub Pages.
+# One-time setup: repo Settings → Pages → Source: "GitHub Actions".
+name: Preview (GitHub Pages)
 
 on:
   push:
@@ -18,17 +20,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
-      - name: Build static site
-        run: node build.mjs
+          cache: npm
+      - run: npm ci
+      - name: Build (pages target)
+        run: npx zsite build . --target pages --strict
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
-
   deploy:
     needs: build
     runs-on: ubuntu-latest

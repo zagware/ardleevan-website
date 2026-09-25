@@ -1,54 +1,40 @@
-# Ardleevan Dog Food — website
+# Ardleevan Dog Food: website
 
-Information-only single-page site for Ardleevan, the Northern Ireland / Ireland distributor of
-Chapel Farm Premium Dog Food. **No ordering, no cart, no payment** — enquiries go to WhatsApp,
-phone, email or Facebook.
+Information-only site for Ardleevan, the Northern Ireland / Ireland distributor of Chapel Farm Premium Dog Food. There is **no ordering, cart or payment**. Enquiries go to WhatsApp, phone, email or Facebook.
 
-Design: *Heritage Field* — forest green and cream, serif headlines, full-bleed field photography,
-alternating product rows. Served at `/`.
+It is built with the [Zagware website framework](https://github.com/zagware/website-framework) (`@zagware/site-framework`, pinned in `package.json`) and uses the *heritage* theme.
 
-## Local development
+| | URL |
+|---|---|
+| Preview (framework version, noindex) | https://zagware.github.io/ardleevan-website-next/ |
+| Original hand-built preview (for comparison) | https://zagware.github.io/ardleevan-website/ |
+| Production (after cutover) | https://ardleevandogfood.co.uk/ |
+
+## Develop
 
 ```sh
-node build.mjs --serve      # build + http://localhost:4173
-node build.mjs              # build only, into dist/
+npm install
+npx zsite dev .          # http://localhost:4173, live reload (--port to change)
+npx zsite check .        # builds every target; fails on warnings, broken links, undeclared third parties
 ```
-
-No dependencies, no install step. Requires Node 18+.
 
 ## Editing content
 
-All words, prices and contact details live in two files. Never edit `dist/` — it is generated.
+All wording, prices and contact details are in two files. Never edit `dist/`; it is generated.
 
-- `content/site.json` — brand copy, hero, about, quality, where-to-buy, contact details, nav
-- `content/products.json` — every Chapel Farm variety, each with composition, analytical
-  constituents, additives, nutritional additives and the full feeding guide
+- `content/site.json`: brand copy, hero, about, quality, where-to-buy, contact details, nav.
+- `content/products.json`: every Chapel Farm variety, each with composition, analytical constituents, additives, nutritional additives and the full feeding guide.
 
-Layout lives in `build/heritage.mjs` (shared helpers in `build/lib.mjs`); styling in
-`styles/heritage.css`. Images live in `assets/img/` — drop a higher-resolution file over an existing
-name and rebuild.
+`site.config.mjs` maps that content onto framework sections (hero, showcase, table, split, gallery, cards, contact, privacy notice). Site-only styling lives in `styles/site.css`.
 
-Page-relative paths matter: the page is served from the site root, so image `src` values are
-`assets/img/…` with no leading `../`.
+Images live in `assets/img/`. To replace one, drop a new file over the existing name. Responsive WebP versions are generated at build time.
 
-## Deployment
+## Deploy
 
-Pushing to `main` triggers `.github/workflows/pages.yml`, which runs `node build.mjs` and publishes
-`dist/` to GitHub Pages. Pages must be set to **Source: GitHub Actions** in repository settings.
+- **Preview:** every push to `main` runs `.github/workflows/preview-pages.yml` and publishes to GitHub Pages.
+- **Production:** the site is hosted on Cloudflare. Follow [CLOUDFLARE-CUTOVER.md](CLOUDFLARE-CUTOVER.md), then `git tag v1.0.0 && git push --tags`, which runs `.github/workflows/deploy-cloudflare.yml`.
+- [DNS-CUTOVER.md](DNS-CUTOVER.md) is the earlier plan to serve the domain from GitHub Pages. It still works as a fallback, but Cloudflare is now the recommended host.
 
-Preview: <https://zagware.github.io/ardleevan-website/>
+## Privacy
 
-## Cutting over to ardleevandogfood.co.uk
-
-The custom domain is deliberately *not* configured yet, so the preview stays reachable while the
-WordPress site remains live on the domain. Setting it early would 301 the preview URL onto a domain
-still pointing at WordPress.
-
-This repo publishes via a GitHub Actions workflow, so the domain binding lives **only** in repository
-settings — a `CNAME` file in the artifact is ignored and is not required.
-
-Owner-facing DNS instructions: [`DNS-CUTOVER.md`](DNS-CUTOVER.md). Once the owner confirms the zone
-is updated:
-
-1. Settings → Pages → **Custom domain** = `ardleevandogfood.co.uk`, Save.
-2. Enable *Enforce HTTPS* once the certificate issues.
+The site sets no cookies and loads nothing from third parties: fonts are self-hosted and there are no embeds or analytics. `/privacy/` is generated from what the site does. **The owner should review it before launch.**
