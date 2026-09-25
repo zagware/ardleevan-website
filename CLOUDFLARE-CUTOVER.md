@@ -31,9 +31,29 @@ The catch: Cloudflare must host the domain's **DNS** (nameservers). The steps be
 
 ## Switch-over (owner, about 5 min)
 
-At Big Wet Fish (the domain's registrar), change the nameservers of `ardleevandogfood.co.uk` from `ns1/ns2/ns3.bigwetfish.co.uk` to the two Cloudflare nameservers. Keep the Big Wet Fish **hosting/email account active**: email still lives there.
+The registrar is **BWF Hosting Ltd** (Nominet tag `BIGWETFISH`, `https://bigwetfish.hosting`), so the change is made in the Big Wet Fish client area — Domains → Manage → Nameservers — or by raising a support ticket with them. Keep the Big Wet Fish **hosting/email account active**: email still lives there.
 
-The change usually takes effect within an hour, but can take up to 24 hours for `.co.uk`.
+Remove all three existing nameservers and replace them with exactly these two:
+
+```
+braden.ns.cloudflare.com
+mira.ns.cloudflare.com
+```
+
+| Remove | Add |
+| --- | --- |
+| `ns1.bigwetfish.co.uk` | `braden.ns.cloudflare.com` |
+| `ns2.bigwetfish.co.uk` | `mira.ns.cloudflare.com` |
+| `ns3.bigwetfish.co.uk` | — |
+
+Do **not** leave any `bigwetfish` nameserver in the list; a mixed set produces inconsistent answers.
+
+Two notes on Cloudflare's "Recommended" panel:
+
+- *Make sure DNSSEC is off* — already confirmed off. The `.uk` registry holds no DS record for this domain, so there is nothing to disable and no risk of a validation failure during the move.
+- *Only allow Cloudflare IP addresses at your origin* — **ignore this.** The origin also serves mail, webmail and cPanel directly over DNS-only records; firewalling it to Cloudflare ranges would break all of them.
+
+The change usually takes effect within an hour, but can take up to 24 hours for `.co.uk`. Cloudflare emails when the zone goes Active.
 
 ## After Cloudflare shows the zone "Active" (developer)
 
